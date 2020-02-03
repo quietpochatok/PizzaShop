@@ -21,13 +21,13 @@ class AddProducts < ActiveRecord::Migration[6.0]
   		:path_to_image => '/images/veg.jpg'
 
 
-  		:title => 'Peppeerone',
-  		:description => 'This is Peppeerone pizza, this very tasty!',
+  		:title => 'Peppeeroni',
+  		:description => 'This is Peppeeroni pizza, this very tasty!',
   		:price => 625
   		:size => 35
   		:is_spicy => true
   		:is_veg => false
   		:is_best_offer => true
-  		:path_to_image => '/images/pepperone.jpg'
+  		:path_to_image => '/images/pepperoni.jpg'
   end
 end
