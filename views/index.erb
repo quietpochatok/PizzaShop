@@ -6,18 +6,26 @@
 	
 		<div class="col-md-3">
 			<div><%= product.title %></div>
-			<div><%= product.description %></div>
-			<div><%= product.price %></div>
-			<div><%= product.size %></div>
 			<div>
 				<img src= '<%= product.path_to_image %>'/>
 			</div>		
+			
+			<div><%= product.description %></div>
+
+			<div><%= product.price %> rub </div>
+
+			<div>Size: <%= product.size %> cm</div>
+<br>
+			<div>
+				<button class="btn btn-sm btn-success">Add to cart</button>
+			</div>
 		</div>
 			
 	<% end %>	
 
 </div>
-
+<br>
+<br>
 <button class="btn btn-primary" onclick="something()">Click me pleez c:</button>
 
 
