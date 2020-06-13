@@ -1,3 +1,4 @@
+
 function something() 
 {
 	let messageForUser = window.localStorage.getItem('message');
@@ -6,4 +7,9 @@ function something()
 		window.localStorage.setItem('message', messageForUser);
 		
 			alert (messageForUser);
+}
+
+function add_to_cart(id) 
+{
+  alert('You added pizza with id: '+ id);
 }

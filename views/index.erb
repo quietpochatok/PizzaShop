@@ -15,10 +15,11 @@
 			<div><%= product.price %> rub </div>
 
 			<div>Size: <%= product.size %> cm</div>
-<br>
+
 			<div>
-				<button class="btn btn-sm btn-success">Add to cart</button>
+				<button class="btn btn-sm btn-success" onclick="add_to_cart(<%= product.id %>)">Add to cart</button>
 			</div>
+
 		</div>
 			
 	<% end %>	
