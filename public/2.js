@@ -1,7 +1,9 @@
 function add_to_cart(id) 
 {
-	let pizzaInCart = window.localStorage.getItem("product_"+ id);
-	pizzaInCart = pizzaInCart * 1 + 1;
+	let numberPizza = ("product_"+ id);
+	
+	let pizzaInCart = window.localStorage.getItem(numberPizza);
+		pizzaInCart = pizzaInCart * 1 + 1;
 	window.localStorage.setItem('product_' + id, pizzaInCart); //hash = key&value
 }
 
