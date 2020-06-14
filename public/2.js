@@ -35,7 +35,7 @@ function order_pizza_in_cart()
 			let amountPizza = window.localStorage.getItem(keyNumberPizza); //получаем значение (hh[key]=x)
 			if (keyNumberPizza.indexOf('prod') == 0) 
 			{
-				orders = orders + keyNumberPizza + '=' + amountPizza ',';
+				orders = orders + keyNumberPizza + '=' + amountPizza +',';
 			}
 		}
 	return orders;
