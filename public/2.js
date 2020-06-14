@@ -8,13 +8,19 @@ function add_to_cart(id)
 	
 	//вывод кол-ва пицц в корзине
 	update_orders_input();
-
+	orders_button_cart();
 }
 
 	function update_orders_input()
 		{	
 		 	let orders = order_pizza_in_cart();
 			$('#ordersInput').val(orders);
+		}
+
+	function orders_button_cart()
+		{
+			let valuePizza = 'Cart (' + total_pizza_in_cart() + ')';
+			$('#orders_button').val(valuePizza);
 		}
 
 function total_pizza_in_cart() 
