@@ -10,11 +10,13 @@ function add_to_cart(id)
 	update_orders_input();
 
 }
-function update_orders_input()
-{	
-	 let orders = order_pizza_in_cart();
-	$('#ordersInput').val(orders);
-}
+
+	function update_orders_input()
+		{	
+		 	let orders = order_pizza_in_cart();
+			$('#ordersInput').val(orders);
+		}
+
 function total_pizza_in_cart() 
 {
 	let cnt = 0;
