@@ -20,7 +20,7 @@ get '/about' do
 end
 
 post '/cart' do
-erb :index
+erb 'hello'
 end
 
 
