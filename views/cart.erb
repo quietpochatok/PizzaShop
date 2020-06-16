@@ -28,7 +28,7 @@
 
 <form action="/place_order" method="POST" role="form">
 
-  <input type="hidden" name="order[orders_input]">
+  <input type="hidden" name="order[orders_input]" value="<%= @orders_input %>"/>
    <div class="form-group">
     <label for="exampleInputName">Ваше имя и фамилия</label>
     <input name="order[name]" type="text" class="form-control" id="exampleInputName" placeholder="Введите ваше имя и фамилия">
@@ -39,7 +39,7 @@
   </div>
   <div class="form-group">
     <label for="exampleInputAddress">Введите ваш адрес</label>
-    <textarea name="order[address]" type="text" class="form-control" id="exampleInputNumber" placeholder="Введите ваш адрес"></textarea> 
+    <textarea name="order[address]" type="text" class="form-control" id="exampleInputAddress" placeholder="Введите ваш адрес"></textarea> 
   </div>
   <button type="submit" class="btn btn-success btn-lg">Send order(Отправить заказ)</button>
 </form>
