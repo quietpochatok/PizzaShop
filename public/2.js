@@ -14,7 +14,7 @@ function add_to_cart(id)
 	function update_orders_input()
 		{	
 		 	let orders = order_pizza_in_cart();
-			$('#ordersInput').val(orders);
+			$('#orders_input').val(orders);
 		}
 
 	function orders_button_cart()
