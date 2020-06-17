@@ -1,6 +1,6 @@
 class CreateProducts < ActiveRecord::Migration[6.0]
   def change
-  	  	create_table :products do |t|
+  	  create_table :products do |t|
       #будут созданы следующие столбы с типом text
   		t.string :title
   		t.text :description
