@@ -26,7 +26,7 @@ end
 
 post '/place_order' do
     @order = Order.create params[:order]
-    erb :order_placed
+    erb :place_order
 end
 
 post '/cart' do
