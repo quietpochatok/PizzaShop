@@ -39,7 +39,7 @@ post '/cart' do
     return erb :cart_is_empty
   end
     
-  end
+
   # выводим список продуктов в корзине
 	@items.each do |item|
 
@@ -49,6 +49,7 @@ post '/cart' do
  # возвращаем представление по дефолту
 	erb :cart
 end
+
 
 def parse_orders_input orders_input
   s1 = orders_input.split(/,/)
