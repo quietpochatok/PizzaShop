@@ -56,15 +56,21 @@ function order_pizza_in_cart()
 
 
 
-function something() 
-{
-	let messageForUser = window.localStorage.getItem('message');
-		 messageForUser = messageForUser*1 + 1;
+// function something() 
+// {
+// 	let messageForUser = window.localStorage.getItem('message');
+// 		 messageForUser = messageForUser*1 + 1;
 
-		window.localStorage.setItem('message', messageForUser); //hash = key&value
+// 		window.localStorage.setItem('message', messageForUser); //hash = key&value
 		
-			alert (messageForUser);
+// 			alert (messageForUser);
+// }
+
+function cancel_order()
+{
+	window.localStorage.clear();
+	update_orders_input();
+		orders_button_cart();
+	$('#cart').text('your cart is now empty')
+	return false;
 }
-
-
-
