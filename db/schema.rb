@@ -24,5 +24,12 @@ ActiveRecord::Schema.define(version: 2020_02_03_145016) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-
+ create_table "orders", force: true do |t|
+    t.text "orders_input"
+    t.text     "name"
+    t.text     "phone"
+    t.text     "address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 end

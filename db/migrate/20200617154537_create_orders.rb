@@ -1,14 +1,12 @@
-class CreateOrders < ActiveRecord::Migration[6.0]
+class CreateOrders < ActiveRecord::Migration
   def change
-  	create_table :orders do |t|
-      #будут созданы следующие столбы с типом text
-  		t.text :order_input
-  		t.text :name
-  		t.text :phone
-  		t.text :address
-  		
-      # дата создания сущностей и обновления
-		  t.timestamps 
-		  end 		
+    create_table :orders do |t|
+      t.text :orders_input
+      t.text :name
+      t.text :phone
+      t.text :address
+
+      t.timestamps
+    end
   end
 end
